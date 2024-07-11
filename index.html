@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -34,6 +34,58 @@
         <button class="btn" id="logout_btn">Logout</button>
     </div>
 
+    <script src="./script.js" type="module"></script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="auth_container" id="auth_container">
+        <div class="container" id="signup_container">
+            <h1>Sign Up</h1>
+            <input type="text" class="inputs" id="signup_firstName" placeholder="First Name">
+            <input type="text" class="inputs" id="signup_lastName" placeholder="Last Name">
+            <input type="email" class="inputs" id="signup_email" placeholder="Enter your E-mail">
+            <input type="password" class="inputs" id="signup_password" placeholder="Enter your Password">
+            <input type="number" class="inputs" id="signup_age" placeholder="Age">
+            <input type="file" id="signup_profileImage">
+            <button class="btn" id="create_btn">Create Account</button>
+            <h6 class="already">Already have an Account <a href="#" id="already">Login</a></h6>
+        </div>
+        <div class="container" id="login_container">
+            <h1>Login</h1>
+            <input type="email" class="inputs" id="login_email" placeholder="Enter your E-mail">
+            <input type="password" class="inputs" id="login_password" placeholder="Enter your Password">
+            <button class="btn" id="Login_btn">Login</button>
+            <h6 class="dont">Don't have an account <a href="#" id="dont">signup</a></h6>
+        </div>
+    </div>
+
+    <div class="home_container" id="home_container">
+        <h1>Welcome to Home page</h1>
+        <h5 class="showemail" id="showemail">tahirahsan@gmail.com</h5>
+        <div id="userInfo">
+            <p>First Name: <span id="firstName"></span></p>
+            <p>Last Name: <span id="lastName"></span></p>
+            <p>Age: <span id="age"></span></p>
+            <img id="profileImage" alt="Profile Image">
+        </div>
+        <button class="btn" id="logout_btn">Logout</button>
+    </div>
+   
+   
     <script src="./script.js" type="module"></script>
 </body>
 
